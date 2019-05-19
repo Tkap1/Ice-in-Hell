@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 1, 0.960784, 0, 1, 1, 0.960784, 0, 0 )
+
+[node name="PlayerDeathParticles" type="CPUParticles2D"]
+amount = 200
+lifetime = 2.0
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 100.0
+initial_velocity_random = 0.5
+scale_amount = 4.0
+color_ramp = SubResource( 1 )

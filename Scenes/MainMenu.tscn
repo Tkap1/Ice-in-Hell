@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Resources/font64.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=2]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 1 )
+
+[sub_resource type="InputEventAction" id=2]
+action = "ui_accept"
+
+[sub_resource type="ShortCut" id=3]
+shortcut = SubResource( 2 )
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 1 )
+script = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -527.0
+margin_top = -96.5
+margin_right = 527.0
+margin_bottom = 96.5
+bbcode_enabled = true
+bbcode_text = "Made by [color=#ff0000]Tkap[/color] for Godot Wild Jam 9"
+text = "Made by Tkap for Godot Wild Jam 9"
+
+[node name="StartButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -235.0
+margin_top = -5.5
+margin_right = 235.0
+margin_bottom = 65.5
+focus_mode = 0
+shortcut_in_tooltip = false
+shortcut = SubResource( 3 )
+text = "START"
